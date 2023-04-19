@@ -1,0 +1,107 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.responsive {
+  width: 100%;
+  height: auto;
+}
+    .nav-button{
+        font-size: 60px;
+    }  
+    
+</style>
+</head>
+<body>
+
+
+  <home-header>
+    <div id="button-left" class="button-left"><span><button style="margin:4%;align:left" class="circle-name">A</button></span><d style="font-face:'Century Gothic';margin-left: 10px;color: #36c5f9;font-size:25px;">Agent</d></div>
+    <div id="button-right" class="button-right"><d style="font-face:'Century Gothic';margin-right: 10px;color: #36c5f9;font-size:25px;">Tourist</d><span><button style="margin:4%;align:left;font-size:20px;" class="circle-name">T</button></span></div>
+  
+      <div id="tab-left">
+        <form action="cpanel.html">
+        <div class="tab-left-log">
+              <input type="text" required name="username" class="form-input-log" id="logEmail" placeholder="Username" /><br/>
+              <input type="password" required name="lname" class="form-input-log" id="logPass" placeholder="Password" />
+              <input type="submit" value="Log In" class="button-logreg"></input>
+        </div>
+      </form>
+        <form action="cpanel.html">
+        <div class="tab-left-reg">
+              <input type="text" required name="name" class="form-input-log" placeholder="Name" /><br/>
+              <input type="email" required name="email" class="form-input-log"  placeholder="Email" />
+              <input type="password" required name="pass" class="form-input-log"  placeholder="Password" />
+              <input type="number" required name="nid" class="form-input-log" placeholder="NID/Birth Cirtificate" />
+              <div style="padding: 5px;color:white"><input type="checkbox" required> Registration as a Agent</div>
+              <input type="submit" value="Register" class="button-logreg"></input>
+        </div>
+      </form>
+      </div>
+  
+      <div id="tab-right">
+        <form action="cpanel.html">
+        <div class="tab-right-log">
+              <input type="text" required name="username" class="form-input-log" id="logEmail" placeholder="Username" /><br/>
+              <input type="password" required name="lname" class="form-input-log" id="logPass" placeholder="Password" />
+              <input type="submit" class="button-logreg" value="Log In" ></input>
+        </div>
+      </form>
+        <div class="tab-right-reg">
+          <form action="cpanel.html">
+              <input type="text" required name="name" class="form-input-log" placeholder="Name" /><br/>
+              <input type="email" required name="email" class="form-input-log"  placeholder="Email" />
+              <input type="password" required name="pass" class="form-input-log"  placeholder="Password" />
+              <input type="number" required name="nid" class="form-input-log" placeholder="NID/Birth Cirtificate" />
+              <div style="padding: 5px;color:white"><input type="checkbox" required> Registration as a Tourist.</div>
+              <input type="submit" class="button-logreg" value="Register" ></input>
+        </div>
+      </form>
+      </div>
+  
+  
+  <div class="logo0"><img style="width:80%;height:auto;" src="assets/img/logo0.png" alt=""><br/><p style="color:#fff;text-dorder:1px solid black;">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  
+  </div>
+  </home-header>
+<home-header>
+  <div style="display:none" id="button-left" class="button-left"></div>
+  <div style="display:none" id="button-right" class="button-right"></div>
+
+<!-- Left Sidebar -->
+  <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNavleft()">×</a>
+  <div style="vertical-align:center;">
+   <a href='Profile.html'> <button class="nav-button" >Profile</button> </a>
+   <a href='location.html'> <button class="nav-button" >Location</button> </a>
+   <a href='package.html'> <button class="nav-button" >Package</button> </a>
+   <a href='discussion.html'> <button class="nav-button" >Discussion</button> </a>                                                                   
+  </div>
+</div>
+
+<!-- Right Sidebar -->
+
+<div id="mySidebar2" class="sidebar-right">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNavright()">×</a>
+    <a href='booking.html'><button class="nav-button" >Booking</button> </a>
+    <a href='information.html'><button class="nav-button" >Information</button> </a>  
+    <a href='security.html'><button class="nav-button" >Security</button> </a>  
+
+</div>
+<!-- right end -->
+
+
+  <button class="openbtn-left" onclick="openNavleft()"><h1>></h1></button>
+  <button class="openbtn-right" onclick="openNavright()"><h1><</h1></button>
+
+</home-header>
+
+<img src="assets/img/about.png" alt="Nature" class="responsive" width="600" height="400">
+      <button class="nav-button" onclick="window.location.href='cpanel.html'">Home</button>
+   
+
+</body>
+</html>

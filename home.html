@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Terra Trek | Your Tourist Guide App</title>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Injamamul Haque Sonet">
+    <meta name="description" content="ihsonnet's Personal Website. Front-End Web Developer, Freelancer, and Graphic Designer.">
+    <meta name="keywords" content="ih,Sonnet,Freelancer,HTML,CSS,JavaScript,PHP,SQL">
+    <meta name="author" content="Injamamul Haque Sonet">
+    <meta name="robots" content="index, follow" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <!-- Libraries -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:100,200,300">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- w3 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+      .mySlides {display:none;}
+    </style>
+</head>
+
+<body>
+
+  <home-header>
+    <div id="button-left" class="button-left"><span><button style="margin:4%;align:left" class="circle-name">A</button></span><d style="font-face:'Century Gothic';margin-left: 10px;color: #36c5f9;font-size:25px;">Agent</d></div>
+    <div id="button-right" class="button-right"><d style="font-face:'Century Gothic';margin-right: 10px;color: #36c5f9;font-size:25px;">Tourist</d><span><button style="margin:4%;align:left;font-size:20px;" class="circle-name">T</button></span></div>
+  
+      <div id="tab-left">
+        <form action="cpanel.html">
+        <div class="tab-left-log">
+              <input type="text" required name="username" class="form-input-log" id="logEmail" placeholder="Username" /><br/>
+              <input type="password" required name="lname" class="form-input-log" id="logPass" placeholder="Password" />
+              <input type="submit" value="Log In" class="button-logreg"></input>
+        </div>
+      </form>
+        <form action="cpanel.html">
+        <div class="tab-left-reg">
+              <input type="text" required name="name" class="form-input-log" placeholder="Name" /><br/>
+              <input type="email" required name="email" class="form-input-log"  placeholder="Email" />
+              <input type="password" required name="pass" class="form-input-log"  placeholder="Password" />
+              <input type="number" required name="nid" class="form-input-log" placeholder="NID/Birth Cirtificate" />
+              <div style="padding: 5px;color:white"><input type="checkbox" required> Registration as a Agent</div>
+              <input type="submit" value="Register" class="button-logreg"></input>
+        </div>
+      </form>
+      </div>
+  
+      <div id="tab-right">
+        <form action="cpanel.html">
+        <div class="tab-right-log">
+              <input type="text" required name="username" class="form-input-log" id="logEmail" placeholder="Username" /><br/>
+              <input type="password" required name="lname" class="form-input-log" id="logPass" placeholder="Password" />
+              <input type="submit" class="button-logreg" value="Log In" ></input>
+        </div>
+      </form>
+        <div class="tab-right-reg">
+          <form action="cpanel.html">
+              <input type="text" required name="name" class="form-input-log" placeholder="Name" /><br/>
+              <input type="email" required name="email" class="form-input-log"  placeholder="Email" />
+              <input type="password" required name="pass" class="form-input-log"  placeholder="Password" />
+              <input type="number" required name="nid" class="form-input-log" placeholder="NID/Birth Cirtificate" />
+              <div style="padding: 5px;color:white"><input type="checkbox" required> Registration as a Tourist.</div>
+              <input type="submit" class="button-logreg" value="Register" ></input>
+        </div>
+      </form>
+      </div>
+  
+  
+  <div class="logo0"><img style="width:80%;height:auto;" src="assets/img/logo0.png" alt=""><br/><p style="color:#fff;text-dorder:1px solid black;">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  
+  </div>
+  </home-header>
+<home-header>
+  <div style="display:none" id="button-left" class="button-left"></div>
+  <div style="display:none" id="button-right" class="button-right"></div>
+
+<!-- Left Sidebar -->
+  <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNavleft()">×</a>
+  <div style="vertical-align:center;">
+   <a href='Profile.html'> <button class="nav-button" >Profile</button> </a>
+   <a href='location.html'> <button class="nav-button" >Location</button> </a>
+   <a href='package.html'> <button class="nav-button" >Package</button> </a>
+   <a href='discussion.html'> <button class="nav-button" >Discussion</button> </a>                                                                   
+  </div>
+</div>
+
+<!-- Right Sidebar -->
+
+<div id="mySidebar2" class="sidebar-right">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNavright()">×</a>
+    <a href='booking.html'><button class="nav-button" >Booking</button> </a>
+    <a href='information.html'><button class="nav-button" >Information</button> </a>  
+    <a href='Discussion.html'><button class="nav-button" >Discussion</button> </a>  
+
+</div>
+<!-- right end -->
+
+
+  <button class="openbtn-left" onclick="openNavleft()"><h1>></h1></button>
+  <button class="openbtn-right" onclick="openNavright()"><h1><</h1></button>
+
+</home-header>
+
+
+    <div style="">
+    <img class="mySlides" src="assets/img/backgrounds/slide1.jpg" style="width:100%">
+    <img class="mySlides" src="assets/img/backgrounds/slide2.jpg" style="width:100%">
+    <img class="mySlides" src="assets/img/backgrounds/slide3.jpg" style="width:100%">
+    <img class="mySlides" src="assets/img/backgrounds/slide4.jpg" style="width:100%">
+
+    <!-- <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button> -->
+    </div>
+
+    <!--Libraries-->
+    <script src="https://use.fontawesome.com/102d004b3a.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/javascript.js"></script>
+</body>
+
+</html>

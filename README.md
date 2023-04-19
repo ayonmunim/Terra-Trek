@@ -1,2 +1,1 @@
-# Terra-Trek
-'A tourist guide app'
+# terra-trek.app
